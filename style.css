@@ -1,0 +1,240 @@
+
+@media screen and (min-width: 769px) {
+    /* STYLES HERE */
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+    /* STYLES HERE */
+}
+
+@media only screen and (max-device-width: 480px) {
+    /* STYLES HERE */
+}
+
+body {
+    margin: 0;
+    background: #EEEEEE;;
+    font-family: 'Work sans', sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+header {
+    background: #eeeeee;
+    
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+    margin-left: 5%;
+}
+
+
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 90%;
+    
+   
+}
+
+header li {
+    display: inline-block;
+    margin-left: 4%;
+    padding-top: 44.5px;
+    
+    position: relative;
+}
+
+header a {
+    color: #DC5F00;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header a:hover {
+    color: #000;
+}
+
+header a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+    position: absolute;
+    top: 100%;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+header a:hover::before {
+    width: 100%;
+}
+
+.main-content {
+    position: relative;
+    text-align: right;
+
+}
+
+.background-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    text-align: center;
+    top: 280px;
+    margin-bottom: 0%;
+    width: 100%;
+    opacity: 65%;
+    background-color: #EEEEEE;
+    position: absolute;
+    height: 325px;
+}   
+
+.overlay-text h1 {
+    font-size: 700%;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #686D76;
+    line-height: 1;
+    margin-top: 20px;
+}
+
+.team {
+    flex-grow: 1;
+    margin-top: -10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.divide {
+    flex-direction: row;
+    display: flex;
+    z-index: 1;
+    padding: 160px;
+    padding-bottom: 0;
+    padding-top: 20px;
+
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+    .divide {
+        flex-direction: column;
+        display: table-column;
+        z-index: 1;
+        padding: 160px;
+        padding-bottom: 0;
+        padding-top: 20px;
+    
+    }
+}
+
+.divide div {
+    width: 50%;
+    padding: 120px;
+}
+
+.divide img {
+    align-self: left;
+    background-color: #686D76;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.background-box {
+    background-color: #686D76;
+    height: 340%;
+    width: 76%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 95%;
+    border-radius: 50px;
+}
+
+.background-box p {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #686D76;
+    margin-top: 10%;
+    font-size: 450%;
+    text-align: center;
+}
+
+.team h1 {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #EEEEEE;
+}
+
+.team p {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #EEEEEE;
+}
+
+.img-background {
+    background-color: #DC5F00;
+}
+
+.game-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: -8000px;
+    row-gap: 30px;
+    }
+
+    .game-item {
+    border: 1px grey solid;
+    border-radius: 10px;
+    width: 70%;
+    height: 100%;
+    margin-left: 30%;
+    }
+    
+    .gameimg {
+    display: flex;
+    display: inline-block;
+    height: 60%;
+    width: 90%;
+    margin-left: 5%;
+    
+    
+    }
+    
+
+     .row {
+        background-color: #373A40;
+        height: 100%;
+     }
+
+     .container-fluid {
+        height: 100%;
+     }
+
+     .gameList {
+        justify-content: center;
+     }
